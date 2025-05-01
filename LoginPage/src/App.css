@@ -1,0 +1,197 @@
+/* Cybersecurity Theme */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /*  prevents scrolling */
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0e0e2c;
+  color: #e0e0e0;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cyber-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f3e, #1c1c5c);
+  padding: 2rem;
+}
+
+.login-card {
+  background: #1a1a3d;
+  border: 1px solid #3b3b6d;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.login-header {
+  text-align: center;
+  /* margin-bottom: 1rem; */
+}
+
+.logo {
+  width: 200px; /* or 120px if you want slightly bigger */
+  height: auto;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+
+.login-header h1 {
+  margin-top: 0;       /* ✨ This removes space above Login */
+  margin-bottom: 0.4rem; /* Optional: add small space below if needed */
+  color: #00ffe7;
+  font-size: 2rem;
+}
+
+
+.login-header p {
+  color: #aaa;
+  font-size: 1rem;
+  margin-top: 0.2rem; /* Prevent too much space */
+}
+
+
+.input-field {
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #00ffe7;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #2a2a5c;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #00ffe7;
+  box-shadow: 0 0 6px #00ffe7;
+}
+
+.input-error {
+  border-color: #ff4d4f;
+}
+
+.error-text {
+  color: #ff4d4f;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  /* ✅ Add some space between items */
+  gap: 1rem;
+  flex-wrap: wrap; /* for small screens */
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+
+  /* Optional spacing */
+  margin-right: 1rem;
+}
+
+
+.link {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #00ffe7;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #00d6c4;
+}
+
+.signup-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Spinner for loading state */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  border-top-color: #00ffe7;
+  animation: spin 0.8s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .login-button {
+    font-size: 0.95rem;
+  }
+}
